@@ -1,0 +1,539 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family:Arial;
+    font-size:12px;
+    background:#f2f2f2;
+    /*background:url("../images/pattern.jpg");*/
+}
+
+/*-----Index-----*/
+
+#box-login {
+    width:420px;
+    padding-bottom:50px;
+    margin:100px auto 0 auto;
+    text-align:center;
+    background:#e5e5e5;
+    border:1px solid #ccc;
+}
+
+#box-login #logo {
+    padding:10px;
+    margin-bottom:50px;
+    background:#6c3;
+}
+
+#box-login input {
+    padding:10px;
+    border:1px solid #999;
+    margin:10px;
+}
+
+/*-----panel-----*/
+.content {
+    width:1000px;
+    margin:0 auto;
+    /*background:#000;*/
+    /*height:100px;*/
+}
+
+header {
+    background:#fff;
+    border-bottom:1px solid #666;
+    box-shadow:0 2px 2px #bbb;
+    position:relative;
+    z-index:1;
+}
+
+header .content {
+    /*background:url("../images/bg_header.jpg") no-repeat center;*/
+    height:50px;
+}
+
+header .content #logo {
+    display:inline-block;
+    width:158px;
+    padding:8px 0 9px 42px;
+    background:#6c3;
+    float:left;
+    /*    border-left:1px solid #e5e5e5;
+        border-right:1px solid #e5e5e5;*/
+}
+
+header .content h1 {
+    display:inline-block;
+    width:798px;
+    padding:11px 0;
+    color:#6c3;
+    /*font-size:26px;*/
+    text-align:center;
+    /*background:#f90;*/
+    float:right;
+}
+
+main .content {
+    min-height:500px;
+    /*height:500px;*/
+    background:#fff;
+    overflow:hidden;
+    border:1px solid #ccc;
+    position: relative;
+}
+
+main .content nav {
+    width:200px;
+    height:100%;
+    background:#e5e5e5;
+    border-right:1px solid #ccc;
+    float:left;
+}
+
+main .content nav ul {
+    /*background:#f09;*/
+}
+
+main .content nav ul li, main .content .nav-2 ul li, main .content #content table tbody tr td ul li {
+    list-style:none;
+}
+
+main .content nav ul li a {
+    cursor:default;
+}
+
+main .content nav ul li a, main .content .nav-2 ul li a, main .content #content .box-pes .actions ul li a {
+    display:block;
+    width:144px;
+    padding:15px 0 15px 56px;
+    /*    height:40px;
+        background:#f90;*/
+    color:#999;
+    text-decoration:none;
+    /*border-bottom:1px solid #ccc;*/
+    position:relative;
+}
+
+main .content nav ul li a:hover, main .content nav ul li a.menu {
+    background:#ccc;
+    color:#666;
+}
+
+main .content nav ul li a span, main .content .nav-2 ul li a span, main .content #content .box-pes .actions ul li a span {
+    display:inline-block;
+    width:16px;
+    height:16px;
+    position:absolute;
+    top:13px;
+    left:20px;
+}
+
+main .content nav ul li a.peoples span,  main .content .nav-2 ul li a.peoples span {
+    background:url("../images/icons/peoples.png") no-repeat center;
+}
+
+main .content nav ul li a.vehicles span, main .content .nav-2 ul li a.vehicles span {
+    background:url("../images/icons/vehicles.png") no-repeat center;
+}
+
+main .content nav ul li a.routes span {
+    background:url("../images/icons/routes.png") no-repeat center;
+}
+
+main .content nav ul li a.monthly span, main .content .nav-2 ul li a.monthly span {
+    background:url("../images/icons/monthly.png") no-repeat center;
+}
+
+main .content nav ul li a.expenses span, main .content .nav-2 ul li a.expenses span {
+    background:url("../images/icons/expenses.png") no-repeat center;
+}
+
+main .content nav ul li a.reports span {
+    background:url("../images/icons/reports.png") no-repeat center;
+}
+
+main .content nav ul li a.fuel span {
+    background:url("../images/icons/fuel.png") no-repeat center;
+}
+
+main .content nav ul li a.values span, main .content .nav-2 ul li a.monthlies span {
+    background:url("../images/icons/values.png") no-repeat center;
+}
+
+main .content nav ul li a.logout span {
+    background:url("../images/icons/logout.png") no-repeat center;
+}
+
+main .content .nav-2 {
+    display:none;
+    width:200px;
+    height:100%;
+    background:#f2f2f2;
+    border-right:1px solid #e5e5e5;
+    float:left;
+}
+
+main .content .nav-2 ul li a.add span {
+    background:url("../images/icons/add.png") no-repeat center;
+}
+
+main .content .nav-2 ul li a.list span {
+    background:url("../images/icons/list.png") no-repeat center;
+}
+
+main .content .nav-2 ul li a.view span {
+    background:url("../images/icons/view.png") no-repeat center;
+}
+
+main .content .nav-2 ul li a.up-val span {
+    background:url("../images/icons/up-val.png") no-repeat center;
+}
+
+main .content .nav-2 ul li a.ok span {
+    background:url("../images/icons/ok.png") no-repeat center;
+}
+
+main .content .nav-2 ul li a:hover, main .content .nav-2 ul li a.submenu {
+    background:#e5e5e5;
+    color:#666;
+}
+
+main .content #content {
+    width:558px;
+    /*height:400px;*/
+    padding-bottom:20px;
+    margin:20px 20px 0 0;
+    /*border-radius:10px;*/
+    /*background:#f0f;*/
+    float:right;
+    position: relative;
+}
+
+main .content #content #help {
+    width:16px;
+    height: 16px;
+    background:url("../images/icons/help.png") no-repeat;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+main .content #content #box-help {
+    display: none;
+    width:100%;
+    height:100%;
+    background:#fff;
+    color:#666;
+    position:absolute;
+    top:0;
+    z-index:100;
+}
+
+main .content #content #box-help ul {
+    margin:10px 10px 10px 20px;
+}
+
+main .content #content #box-help #close {
+    width:16px;
+    height: 16px;
+    background:url("../images/icons/x.png") no-repeat;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+main .content #content .bus {
+    display:block;
+    margin:50px auto 0 auto;
+}
+
+main .content #content h1 {
+    font-size:24px;
+    color:#999;
+    margin-bottom:10px;
+}
+
+main .content #content .print {
+    color:#6c3;
+    float:right;
+    margin-top:10px;
+}
+
+main .content h1 a {
+    color:#6c3;
+    text-decoration: none;
+}
+
+main .content h1 a:hover {
+    text-decoration: underline;
+}
+
+main .content #content .msg, .msg {
+    display:none;
+    width:100%;
+    padding:10px 0;
+    text-align:center;
+    border:1px solid;
+}
+
+.error {
+    width:80%;
+    margin:0 auto;
+}
+
+main .content #content .error, main .content #content .fields, main .content #content .numeric, main .content #content .email, .error, .up_error {
+    border-color:#f00;
+    background:#ffe5e5;
+    color:#f00;
+}
+
+main .content #content .sucess, .up_sucess {
+    border-color:#6c3;
+    background:#e5ffe5;
+    color:#390;
+}
+
+/*form*/
+main .content #content form * {
+    font-size:12px;
+}
+
+main .content #content form .level {
+    display:none;
+}
+
+main .content #content form .input {
+    /*background: #f90;*/
+    overflow:hidden;
+}
+
+main .content #content form .input > label {
+    display:inline-block;
+    width:60px;
+    padding:10px 10px 11px 10px;
+    margin:10px 0;
+    background:#6c3;
+    color:#fff;
+    float:left;
+}
+
+main .content #content form .input .textarea {
+    height:45px;
+}
+
+main .content #content form .input .box-input label {
+    margin:0 50px 0 10px;
+}
+
+main .content #content form .input input[type="text"], main .content #content form .input input[type="password"], main .content #content form .input select, main .content #content form .input textarea, main .content #content form .box-input {
+    display:inline-block;
+    width:450px;
+    padding:9px 10px;
+    margin:10px 0;
+    border:1px solid #6c3;
+    background:#fff;
+    float:left;
+}
+
+main .content #content form .box-input {
+    padding:8px 10px;
+}
+
+main .content #content form .input select {
+    width:472px;
+    padding:8px 10px;
+}
+
+main .content #content form .input textarea {
+    resize:none;
+    height:46px;
+}
+
+main .content #content form .input .box-image {
+    padding:5px 10px;
+}
+
+main .content #content form .input #phone,  main .content #content form .input #cellular {
+    width:160px;
+}
+
+main .content #content form .input #phone {
+    margin-right:28px;
+}
+
+main .content #content form .input .btn {
+    float:right;
+    border:none;
+    padding:10px;
+    color:#fff;
+    margin-right:6px;
+}
+
+main .content #content form .input .btn:hover {
+    background:#ccc;
+}
+
+main .content #content form .input input[type="submit"] {
+    background:#6c3;
+}
+
+main .content #content form .input input[type="reset"] {
+    background:#999;
+}
+
+/*lis-pes*/
+main .content #content .box-pes {
+    padding:5px;
+    margin-bottom:10px;
+    /*background:#6c3;*/
+    border:1px solid #ccc;
+    overflow:hidden;
+}
+
+main .content #content .box-pes > * {
+    float:left;
+}
+
+main .content #content .box-pes .info {
+    width:250px;
+    margin-left:20px;
+    /*background:#f09;*/
+    color:#6c3;
+    line-height:19px;
+}
+
+main .content #content .box-pes .info span {
+    display:inline-block;
+    width:70px;
+    color:#666;
+    /*background:#f90;*/
+}
+
+main .content #content .box-pes .actions {
+    width:120px;
+    /*background:#9f0;*/
+    float:right;
+}
+
+main .content #content .box-pes .actions ul li {
+    list-style:none;
+    /*margin:10px 0;*/
+    /*background: #f90;*/
+}
+
+main .content #content .box-pes .actions ul li a:hover {
+    color:#666;
+}
+
+main .content #content .box-pes .actions ul li a.edit span {
+    background:url("../images/icons/edit.png") no-repeat center;
+}
+
+main .content #content .box-pes .actions ul li a.contract span {
+    background:url("../images/icons/contract.png") no-repeat center;
+}
+
+main .content #content .box-pes .actions ul li a.delete span {
+    background:url("../images/icons/delete.png") no-repeat center;
+}
+
+/*CONTRACTS*/
+
+main .content #content table tbody tr td {
+    text-align: center;
+}
+
+main .content #content table tbody tr td ul li {
+    display:inline;
+    text-align: center;
+}
+
+main .content #content table tbody tr td ul li a {
+    display:inline;
+    text-decoration:none;
+    margin:0 10px;
+}
+
+main .content #content table tbody tr td ul li a span {
+    display:inline-block;
+    width:16px;
+    height:16px;
+}
+
+main .content #content table tbody tr td ul li a.ok span {
+    background:url("../images/icons/ok.png") no-repeat center;
+}
+
+main .content #content table tbody tr td ul li a.mail span {
+    background:url("../images/icons/mail.png") no-repeat center;
+}
+
+main .content #content table tbody tr td ul li a.view span {
+    background:url("../images/icons/view.png") no-repeat center;
+}
+
+/*REPORTS*/
+
+main .content #content table {
+    width:100%;
+    /*background: #f90;*/
+}
+
+main .content #content table thead tr, main .content #content table tfoot tr {
+    background:#6c3;
+    color: #fff;
+}
+
+main .content #content table tbody tr:hover {
+    background:#e5e5e5;
+}
+
+main .content #content table thead tr th, main .content #content table tbody tr td, main .content #content table tfoot tr td  {
+    padding:10px 5px;
+}
+
+/*rotas*/
+
+main .content #content #map_canvas {
+    width:100%;
+    height:500px;
+}
+
+.white {
+    background:#fff;
+}
+
+main #content-print {
+    background: none;
+    border:none;
+    width:100%;
+}
+
+main #content-print .content-print {
+    /*background:#f90;*/
+    margin: 0 auto;
+    float:none;
+}
+
+footer .content {
+    background:#6c3;
+    height:75px;
+    padding-top:25px;
+    margin-bottom:10px;
+    border:1px solid #ccc;
+    border-top:none;
+    color:#fff;
+}
+
+footer .content a {
+    margin:0 50px;
+}
+
+footer .content p {
+    float:right;
+    margin-right: 50px;
+}
+
+
